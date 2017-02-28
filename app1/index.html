@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app='myApp' ng-controller="DropCtrl2">
+<head lang="en">   
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="index1.js"></script> 
+<link rel="stylesheet" href="style.css"> 
+  <!-- <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'> -->
+ </head>
+
+<body>
+<form>
+<h1>Login Form</h1>
+  <div class="login-wrap">
+	<div class="login-html">
+		 <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"></label> 
+		 <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+		<div class="login-form" >
+			<div class="sign-in-htm" ng-repeat="x in y">
+				<div class="group" >
+					<label  class="label">Username</label>
+					<input type="text" class="input"  ng-model="x.Username">				
+					</div>
+				<div class="group">
+					<label  class="label">Password</label>
+					<input type="password" class="input" data-type="password" ng-model="x.Password">
+				</div>
+				<div class="group">
+				<label class="label">email</label>
+					<input type="Email" class="input"  ng-model="x.Email">
+				</div>
+				<div class="group">
+					<label class="label">PhoneNumber</label>
+					<input type="text" class="input"  ng-model="x.PhoneNumber">
+				</div>  
+				<div class="group">
+					<input type="submit" class="button" value="Sign In">
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
+</form>
+</body>
+</html>
